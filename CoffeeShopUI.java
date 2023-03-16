@@ -191,15 +191,15 @@ public class CoffeeShopUI extends JFrame implements ActionListener {
                 }
                 
                 public static void main(String[] args) {
-                EventQueue.invokeLater(() -> {
-                try {
-                CoffeeShopApplication window = new CoffeeShopApplication();
-                ((Window) window.frame).setVisible(true);
-                } catch (Exception e) {
-                e.printStackTrace();
-                }
-                });
-                }
+                    EventQueue.invokeLater(() -> {
+                    try {
+                    CoffeeShopApplication window = new CoffeeShopApplication();
+                    ((JFrame) window.getFrame()).setVisible(true);
+                    } catch (Exception e) {
+                    e.printStackTrace();
+                    }
+                    });
+                    }
                 }
                 
                 
